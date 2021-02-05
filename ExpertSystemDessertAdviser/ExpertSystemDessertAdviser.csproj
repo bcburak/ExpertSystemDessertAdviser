@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdviserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdviserForm.Designer.cs">
+      <DependentUpon>AdviserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approvement.Designer.cs">
+      <DependentUpon>Approvement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Context\MainDbContext.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Meal.cs" />
@@ -80,6 +92,12 @@
     <Compile Include="Shell\Rule.cs" />
     <Compile Include="Shell\RuleInferenceEngine.cs" />
     <Compile Include="Shell\WorkingMemory.cs" />
+    <EmbeddedResource Include="AdviserForm.resx">
+      <DependentUpon>AdviserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvement.resx">
+      <DependentUpon>Approvement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
