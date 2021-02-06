@@ -11,6 +11,6 @@ namespace ExpertSystemDessertAdviser.Entities
         public string Title { get; set; }
         public string Address { get; set; }
 
-        public ICollection<Meal> Meals { get; set; }
+        public virtual ICollection<Meal> Meals { get; set; }
     }
 }
