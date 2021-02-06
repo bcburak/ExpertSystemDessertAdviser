@@ -12,7 +12,7 @@ namespace ExpertSystemDessertAdviser.Entities
         public string MealType { get; set; }
         public bool MealAdviser { get; set; }
 
-        public virtual int RestaurantId { get; set; }
+        public int RestaurantId { get; set; }
         public virtual Restaurant Restaurant { get; set; }
 
     }
