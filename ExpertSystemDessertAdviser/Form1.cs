@@ -27,11 +27,11 @@ namespace ExpertSystemDessertAdviser
 
         }
 
-        private User GetUsers()
+        private Customer GetUsers()
         {
             MainDbContext db = new MainDbContext();
 
-            return db.User.FirstOrDefault();
+            return db.Customers.FirstOrDefault();
             //foreach (var item in db.User)
             //{
             //    item.
