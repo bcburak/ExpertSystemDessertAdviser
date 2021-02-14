@@ -1,6 +1,6 @@
 ﻿namespace ExpertSystemDessertAdviser.Entities
 {
-    public class Meal : BaseEntity
+    public class Desert : BaseEntity
     {
         public int RestaurantId { get; set; }
         public virtual Restaurant Restaurant { get; set; }

@@ -70,10 +70,12 @@
     </Compile>
     <Compile Include="Context\MainDbContext.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\Desert.cs" />
     <Compile Include="Entities\Meal.cs" />
+    <Compile Include="Entities\OrderItem.cs" />
     <Compile Include="Entities\Order.cs" />
     <Compile Include="Entities\Restaurant.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
