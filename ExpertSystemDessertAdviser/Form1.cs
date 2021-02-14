@@ -23,15 +23,20 @@ namespace ExpertSystemDessertAdviser
 
         private void button1_Click(object sender, EventArgs e)
         {
-			var asd = getInferenceEngine();
 
-        }
+			Form1 frm = new Form1();
+			frm.Hide();
+			AdviserForm adviserForm = new AdviserForm();
+			adviserForm.Show();
+			//var asd = getInferenceEngine();
 
-        private User GetUsers()
+		}
+
+        private List<User> GetUsers()
         {
             MainDbContext db = new MainDbContext();
 
-            return db.User.FirstOrDefault();
+			return db.User.ToList();
             //foreach (var item in db.User)
             //{
             //    item.
@@ -105,6 +110,14 @@ namespace ExpertSystemDessertAdviser
 			return rie;
 		}
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+			var userList = this.GetUsers();
 
-	}
+            foreach (var item in userList)
+            {
+				userDropdown.Items.Add(item.UserName);
+            }
+        }
+    }
 }

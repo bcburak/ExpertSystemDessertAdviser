@@ -1,0 +1,5 @@
+﻿select * from OrderItems OI 
+inner join Orders OD on OI.OrderId = OD.Id
+inner join Meals ME on OI.MealId = ME.Id
+inner join Users US on OD.UserId = Us.Id
+where US.UserName ='burakcelik' and ME.MealTypeId =2
