@@ -23,6 +23,10 @@ namespace ExpertSystemDessertAdviser
 
         private void button1_Click(object sender, EventArgs e)
         {
+			Form1 frm = new Form1();
+			frm.Hide();
+			AdviserForm adviserForm = new AdviserForm();
+			adviserForm.Show();
 			var asd = getInferenceEngine();
 
         }
