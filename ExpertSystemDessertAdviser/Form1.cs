@@ -26,7 +26,8 @@ namespace ExpertSystemDessertAdviser
 
 			Form1 frm = new Form1();
 			frm.Hide();
-			AdviserForm adviserForm = new AdviserForm();
+			var selectedUser = userDropdown.SelectedItem.ToString();
+			AdviserForm adviserForm = new AdviserForm(selectedUser);
 			adviserForm.Show();
 			//var asd = getInferenceEngine();
 

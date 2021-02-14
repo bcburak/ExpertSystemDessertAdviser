@@ -14,16 +14,17 @@ namespace ExpertSystemDessertAdviser
 {
     public partial class AdviserForm : Form
     {
-        public AdviserForm()
+        private string _userName;
+        public AdviserForm(string userName)
         {
+            this.Text = userName;
+            _userName = userName;
             InitializeComponent();
         }
 
         private void AdviserForm_Load(object sender, EventArgs e)
         {
-            var userName = "burakcelik";
-            this.Rule1(userName);
-
+            this.Rule1(_userName);
         }
 
         private Order GetOrderItemsByUserName(string userName)
