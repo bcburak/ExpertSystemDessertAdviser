@@ -33,61 +33,53 @@ namespace ExpertSystemDessertAdviser
             this.btnAdvice2 = new System.Windows.Forms.Button();
             this.btnAdvice3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdvice1
             // 
-            this.btnAdvice1.Location = new System.Drawing.Point(68, 126);
+            this.btnAdvice1.Location = new System.Drawing.Point(98, 124);
             this.btnAdvice1.Name = "btnAdvice1";
-            this.btnAdvice1.Size = new System.Drawing.Size(259, 114);
+            this.btnAdvice1.Size = new System.Drawing.Size(244, 114);
             this.btnAdvice1.TabIndex = 0;
             this.btnAdvice1.Text = "advise1";
             this.btnAdvice1.UseVisualStyleBackColor = true;
+            this.btnAdvice1.Click += new System.EventHandler(this.btnAdvice1_Click);
             // 
             // btnAdvice2
             // 
-            this.btnAdvice2.Location = new System.Drawing.Point(345, 129);
+            this.btnAdvice2.Location = new System.Drawing.Point(369, 124);
             this.btnAdvice2.Name = "btnAdvice2";
-            this.btnAdvice2.Size = new System.Drawing.Size(271, 111);
+            this.btnAdvice2.Size = new System.Drawing.Size(252, 114);
             this.btnAdvice2.TabIndex = 1;
             this.btnAdvice2.Text = "advise2";
             this.btnAdvice2.UseVisualStyleBackColor = true;
+            this.btnAdvice2.Click += new System.EventHandler(this.btnAdvice2_Click);
             // 
             // btnAdvice3
             // 
-            this.btnAdvice3.Location = new System.Drawing.Point(645, 129);
+            this.btnAdvice3.Location = new System.Drawing.Point(652, 126);
             this.btnAdvice3.Name = "btnAdvice3";
-            this.btnAdvice3.Size = new System.Drawing.Size(303, 111);
+            this.btnAdvice3.Size = new System.Drawing.Size(258, 112);
             this.btnAdvice3.TabIndex = 2;
             this.btnAdvice3.Text = "advise3";
             this.btnAdvice3.UseVisualStyleBackColor = true;
+            this.btnAdvice3.Click += new System.EventHandler(this.btnAdvice3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(62, 273);
+            this.label1.Location = new System.Drawing.Point(62, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(898, 36);
             this.label1.TabIndex = 3;
             this.label1.Text = "Sizin için belirlediğimiz öneriler bunlar.Hangisini seçmek istersiniz?";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(444, 359);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(126, 49);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Yenile ???";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // AdviserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 357);
-            this.Controls.Add(this.button4);
+            this.ClientSize = new System.Drawing.Size(1019, 347);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdvice3);
             this.Controls.Add(this.btnAdvice2);
@@ -106,6 +98,5 @@ namespace ExpertSystemDessertAdviser
         private System.Windows.Forms.Button btnAdvice2;
         private System.Windows.Forms.Button btnAdvice3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
     }
 }

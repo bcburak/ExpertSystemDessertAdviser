@@ -119,6 +119,7 @@ namespace ExpertSystemDessertAdviser
             {
 				userDropdown.Items.Add(item.UserName);
             }
+			userDropdown.SelectedIndex = 0;
         }
     }
 }

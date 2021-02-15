@@ -32,8 +32,8 @@ namespace ExpertSystemDessertAdviser
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.userDropdown = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,15 @@ namespace ExpertSystemDessertAdviser
             this.panel1.Size = new System.Drawing.Size(235, 66);
             this.panel1.TabIndex = 2;
             // 
+            // userDropdown
+            // 
+            this.userDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.userDropdown.FormattingEnabled = true;
+            this.userDropdown.Location = new System.Drawing.Point(54, 17);
+            this.userDropdown.Name = "userDropdown";
+            this.userDropdown.Size = new System.Drawing.Size(161, 28);
+            this.userDropdown.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -74,14 +83,6 @@ namespace ExpertSystemDessertAdviser
             this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "User";
-            // 
-            // userDropdown
-            // 
-            this.userDropdown.FormattingEnabled = true;
-            this.userDropdown.Location = new System.Drawing.Point(54, 17);
-            this.userDropdown.Name = "userDropdown";
-            this.userDropdown.Size = new System.Drawing.Size(161, 28);
-            this.userDropdown.TabIndex = 1;
             // 
             // Form1
             // 
