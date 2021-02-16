@@ -31,10 +31,10 @@ namespace ExpertSystemDessertAdviser
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.userDropdown = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -57,20 +57,11 @@ namespace ExpertSystemDessertAdviser
             this.label1.TabIndex = 1;
             this.label1.Text = "Yemek yanında tatlı ister misin?";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.userDropdown);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(657, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(235, 66);
-            this.panel1.TabIndex = 2;
-            // 
             // userDropdown
             // 
             this.userDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.userDropdown.FormattingEnabled = true;
-            this.userDropdown.Location = new System.Drawing.Point(54, 17);
+            this.userDropdown.Location = new System.Drawing.Point(57, 24);
             this.userDropdown.Name = "userDropdown";
             this.userDropdown.Size = new System.Drawing.Size(161, 28);
             this.userDropdown.TabIndex = 1;
@@ -78,25 +69,39 @@ namespace ExpertSystemDessertAdviser
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 20);
+            this.label2.Location = new System.Drawing.Point(5, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "User";
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.userDropdown);
+            this.metroPanel1.Controls.Add(this.label2);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(661, 264);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(238, 78);
+            this.metroPanel1.TabIndex = 3;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 365);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Ana Ekran";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,9 +111,9 @@ namespace ExpertSystemDessertAdviser
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.ComboBox userDropdown;
         private System.Windows.Forms.Label label2;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }
 
